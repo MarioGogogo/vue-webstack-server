@@ -1,0 +1,342 @@
+{
+  "cors": {
+    "origin": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js",
+    "credentials": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js",
+    "allowMethods": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js"
+  },
+  "security": {
+    "csrf": {
+      "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js",
+      "type": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "supportedRequests": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "keys": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js",
+  "middleware": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js",
+  "gzip": {
+    "threshold": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js"
+  },
+  "paramsErr": {
+    "errIds": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js"
+  },
+  "mongoose": {
+    "client": {
+      "url": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js",
+      "options": {
+        "auth": {
+          "authSource": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js"
+        },
+        "user": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js",
+        "pass": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/config.default.js"
+      }
+    },
+    "url": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-mongoose/config/config.default.js",
+    "options": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-mongoose/config/config.default.js",
+    "plugins": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-mongoose/config/config.default.js",
+    "loadModel": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-mongoose/config/config.default.js",
+    "app": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-mongoose/config/config.default.js",
+    "agent": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-mongoose/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-session/config/config.default.js",
+    "logValue": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "defaultParamCharset": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "name": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "version": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "description": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "private": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "egg": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "egg-mongoose": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "koa-is-json": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "koa-parameter": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "koa2-validation": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "mongoose-sequence": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "zlib": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "stop": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "dev": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "debug": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "test": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "cov": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "lint": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "ci": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "type": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "url": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "license": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "bundleDependencies": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "timing": {
+      "slowBootActionMinDuration": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "cacheControl": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "strict": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "depth": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "env": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "level": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "enablePerformanceTimer": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "enableFastContextLogger": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    },
+    "useHttpClientNext": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+  },
+  "meta": {
+    "enable": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "logging": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "port": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/config.default.js"
+}
