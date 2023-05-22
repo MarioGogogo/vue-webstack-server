@@ -54,11 +54,15 @@ class CategoryController extends Controller {
         icon_name: icon,
       }
     );
-    console.log('%c Line:38 🍓 doc', 'font-size:18px;color:#ffffff;background:#f368e0', doc);
-    if (doc.length) {
+    if (doc.ok === 1 && doc.n === 1) {
       ctx.body = {
         code: 200,
         message: '修改成功',
+      };
+    } else {
+      ctx.body = {
+        code: 400,
+        message: '修改失败',
       };
     }
   }
@@ -67,14 +71,16 @@ class CategoryController extends Controller {
   async deleteCategory() {
     const { ctx } = this;
     const { id } = ctx.request.body;
-    await this.ctx.model.Category.deleteOne({
+    const doc = await this.ctx.model.Category.deleteOne({
       _id: id,
     });
+    console.log('%c Line:75 👩‍🏫 删除类别', 'font-size:18px;color:#ffffff;background:#f368e0', doc);
     // Line:60 🐞 doc { n: 0, ok: 1, deletedCount: 0 }
-    ctx.body = {
-      code: 200,
-      message: '删除成功',
-    };
+    if (doc.ok === 1 && doc.n === 1) {
+      ctx.response.success({ data: ['test', 'test2'], message: '删除成功' });
+    } else {
+      ctx.response.failure({ message: '删除失败' });
+    }
   }
 
   // 批量删除
@@ -83,17 +89,16 @@ class CategoryController extends Controller {
     const { ids } = ctx.request.body;
     const delete_ids = ids || [];
     try {
-      await this.ctx.model.Category.deleteMany({ _id: { $in: delete_ids } });
-      ctx.body = {
-        code: 200,
-        message: '批量删除成功',
-      };
+      const res = await this.ctx.model.Category.deleteMany({ _id: { $in: delete_ids } });
+      console.log('%c Line:93 🍒 res', 'font-size:18px;color:#ffffff;background:#CC9966', res);
+      if (doc.ok === 1 && doc.n === 1) {
+        ctx.response.success({ data: ['test', 'test2'], message: '批量删除成功' });
+      } else {
+        ctx.response.failure({ message: '批量删除失败' });
+      }
     } catch (error) {
       console.log('%c Line:84 🍔 error', 'font-size:18px;color:#ffffff;background:#1dd1a1', error);
-      ctx.body = {
-        code: 400,
-        message: '批量删除失败',
-      };
+      ctx.response.failure({ message: '批量删除失败' });
     }
   }
 }

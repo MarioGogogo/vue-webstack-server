@@ -89,7 +89,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -102,8 +102,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -128,7 +128,7 @@
       "fileExtensions": [],
       "whitelist": null,
       "allowArrayField": false,
-      "tmpdir": "/var/folders/sm/pkl1bfyd4fn8hw4z_rgjvwj40000gn/T/egg-multipart-tmp/egg-demo",
+      "tmpdir": "/var/folders/gz/s7ppk9vj3h5f3t32g74091bm0000gn/T/egg-multipart-tmp/vue-webstack-server",
       "cleanSchedule": {
         "cron": "0 30 4 * * *",
         "disable": false
@@ -153,14 +153,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/app/public",
+      "dir": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/app/view",
+      "root": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -190,8 +190,8 @@
       }
     },
     "env": "local",
-    "name": "egg-demo",
-    "keys": "<String len: 27>",
+    "name": "vue-webstack-server",
+    "keys": "<String len: 38>",
     "cookies": {},
     "proxy": false,
     "maxIpsCount": 0,
@@ -200,7 +200,7 @@
     "ipHeaders": "x-forwarded-for",
     "hostHeaders": "",
     "pkg": {
-      "name": "egg-demo",
+      "name": "vue-webstack-server",
       "version": "1.0.0",
       "description": "",
       "private": true,
@@ -253,9 +253,9 @@
         "koa-parameter"
       ]
     },
-    "baseDir": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server",
+    "baseDir": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server",
     "HOME": "/Users/lovewcc",
-    "rundir": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/run",
+    "rundir": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/run",
     "dump": {
       "ignore": "<Set>",
       "timing": {
@@ -291,7 +291,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/logs/egg-demo",
+      "dir": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/logs/vue-webstack-server",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -299,7 +299,7 @@
       "disableConsoleAfterReady": false,
       "outputJSON": false,
       "buffer": true,
-      "appLogName": "egg-demo-web.log",
+      "appLogName": "vue-webstack-server-web.log",
       "coreLogName": "egg-web.log",
       "agentLogName": "egg-agent.log",
       "errorLogName": "common-error.log",
@@ -370,6 +370,24 @@
         "456"
       ]
     },
+    "ERR_TYPE": {
+      "UNKNOWN_ERROR": {
+        "code": "-10000",
+        "message": "Internal server error."
+      },
+      "NOT_EXIST_ROUTE": {
+        "code": "-10001",
+        "message": "The route does not exist"
+      },
+      "Up_SYS_TIME_OUT": {
+        "code": "-20001",
+        "message": "Upstream system timeout."
+      },
+      "NOT_LOGIN": {
+        "code": "-30001",
+        "message": "Not login."
+      }
+    },
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
     "appMiddleware": "~config~middleware"
@@ -384,8 +402,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-onerror",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-onerror",
       "version": "2.2.0"
     },
     "session": {
@@ -395,8 +413,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-session",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-session",
       "version": "3.3.0"
     },
     "i18n": {
@@ -406,8 +424,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-i18n",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -417,8 +435,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-watcher",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-watcher",
       "version": "3.1.1",
       "dependents": [
         "development"
@@ -433,8 +451,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-multipart",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-multipart",
       "version": "3.3.0"
     },
     "security": {
@@ -446,8 +464,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-security",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security",
       "version": "3.0.0"
     },
     "development": {
@@ -461,8 +479,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-development",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-development",
       "version": "2.7.0"
     },
     "logrotator": {
@@ -474,8 +492,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-logrotator",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "schedule": {
@@ -485,8 +503,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-schedule",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-schedule",
       "version": "4.0.0",
       "dependents": [
         "logrotator"
@@ -499,8 +517,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-static",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-static",
       "version": "2.3.1"
     },
     "jsonp": {
@@ -512,8 +530,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-jsonp",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "view": {
@@ -523,8 +541,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-view",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-view",
       "version": "2.1.4"
     },
     "cors": {
@@ -534,8 +552,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-cors",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-cors",
       "version": "2.2.3"
     },
     "mongoose": {
@@ -545,19 +563,19 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/config/plugin.js",
-      "path": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server/node_modules/egg-mongoose",
+      "from": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/plugin.js",
+      "path": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-mongoose",
       "version": "3.3.1"
     }
   },
   "appInfo": {
-    "name": "egg-demo",
-    "baseDir": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server",
+    "name": "vue-webstack-server",
+    "baseDir": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server",
     "env": "local",
     "scope": "",
     "HOME": "/Users/lovewcc",
     "pkg": {
-      "name": "egg-demo",
+      "name": "vue-webstack-server",
       "version": "1.0.0",
       "description": "",
       "private": true,
@@ -608,6 +626,6 @@
       "license": "MIT",
       "bundleDependencies": "~config~pkg~bundleDependencies"
     },
-    "root": "/Users/lovewcc/Documents/Study/前后端-导航项目/webstack-server"
+    "root": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server"
   }
 }

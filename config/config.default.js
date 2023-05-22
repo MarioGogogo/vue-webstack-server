@@ -1,7 +1,7 @@
 /* eslint valid-jsdoc: "off" */
 
 'use strict';
-
+const ERR_TYPE = require('./error');
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
@@ -59,5 +59,6 @@ module.exports = (appInfo) => {
   return {
     ...config,
     ...userConfig,
+    ERR_TYPE,
   };
 };

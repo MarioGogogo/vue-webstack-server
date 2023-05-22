@@ -85,7 +85,7 @@ class LinksController extends Controller {
     const { ctx } = this;
     const { title, icon, id, url, des } = ctx.request.body;
     // 查询是否重命名
-    const doc = await this.ctx.model.Links.updateOne(
+    const doc = await ctx.model.Links.updateOne(
       {
         _id: id,
       },
@@ -97,10 +97,15 @@ class LinksController extends Controller {
       }
     );
     console.log('%c Line:51 🥐 修改', 'font-size:18px;color:#ffffff;background:#ff6b6b', doc);
-    if (doc.ok === 1) {
+    if (doc.ok === 1 && doc.n === 1) {
       ctx.body = {
         code: 200,
         message: '修改成功',
+      };
+    } else {
+      ctx.body = {
+        code: 400,
+        message: '修改失败',
       };
     }
   }

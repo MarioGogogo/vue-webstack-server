@@ -1,0 +1,340 @@
+2023-05-22 10:04:07,488 ERROR 27707 [-/127.0.0.1/-/0ms GET /] nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [43.134.241.119:8082] on first connect [MongoNetworkTimeoutError: connection timed out
+    at connectionFailureError (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:362:14)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:16)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)]
+    at connectionFailureError (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:362:14)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:16)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)]
+    at Pool.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:441:11)
+    at Pool.emit (node:events:390:28)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:564:14
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:1000:11
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:32:7
+    at callback (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:300:5)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:7)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+name: "MongoNetworkError"
+pid: 27707
+hostname: MacBook-Pro-2.local
+
+2023-05-22 10:06:01,481 ERROR 27922 [-/127.0.0.1/-/1ms GET /] nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [43.134.241.119:8082] on first connect [MongoNetworkTimeoutError: connection timed out
+    at connectionFailureError (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:362:14)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:16)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)]
+    at connectionFailureError (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:362:14)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:16)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)]
+    at Pool.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:441:11)
+    at Pool.emit (node:events:390:28)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:564:14
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:1000:11
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:32:7
+    at callback (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:300:5)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:7)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+name: "MongoNetworkError"
+pid: 27922
+hostname: MacBook-Pro-2.local
+
+2023-05-22 10:07:43,215 ERROR 28033 [-/127.0.0.1/-/267ms POST /deletecategory] nodejs.ReferenceError: doc is not defined
+    at CategoryController.deleteCategory (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/app/controller/category.js:78:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async paramsErr (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/app/middleware/paramsErr.js:19:5)
+    at async /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa-bodyparser/index.js:91:5)
+    at async /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/@koa/cors/index.js:61:32)
+    at async /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa/lib/application.js:160:16
+
+pid: 28033
+hostname: MacBook-Pro-2.local
+
+2023-05-22 10:15:58,114 ERROR 28600 [-/127.0.0.1/-/107ms POST /deletecategory] nodejs.TypeError: ctx.helper.now is not a function
+    at Object.failure (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/app/extend/response.js:29:27)
+    at CategoryController.deleteCategory (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/app/controller/category.js:86:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async paramsErr (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/app/middleware/paramsErr.js:19:5)
+    at async /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa-bodyparser/index.js:91:5)
+    at async /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/@koa/cors/index.js:61:32)
+    at async /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa/lib/application.js:160:16
+
+pid: 28600
+hostname: MacBook-Pro-2.local
+
+2023-05-22 10:16:00,671 ERROR 28615 [-/127.0.0.1/-/1ms GET /] nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [43.134.241.119:8082] on first connect [MongoNetworkTimeoutError: connection timed out
+    at connectionFailureError (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:362:14)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:16)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)]
+    at connectionFailureError (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:362:14)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:16)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)]
+    at Pool.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:441:11)
+    at Pool.emit (node:events:390:28)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:564:14
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:1000:11
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:32:7
+    at callback (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:300:5)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:7)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+name: "MongoNetworkError"
+pid: 28615
+hostname: MacBook-Pro-2.local
+
+2023-05-22 10:20:01,733 ERROR 28911 [-/127.0.0.1/-/1005ms POST /deletecategory] nodejs.TypeError: ctx.helper.now is not a function
+    at Object.failure (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/app/extend/response.js:29:27)
+    at CategoryController.deleteCategory (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/app/controller/category.js:86:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async paramsErr (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/app/middleware/paramsErr.js:19:5)
+    at async /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa-bodyparser/index.js:91:5)
+    at async /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/app/middleware/meta.js:12:5)
+    at async cors (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/@koa/cors/index.js:61:32)
+    at async /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/koa/lib/application.js:160:16
+
+pid: 28911
+hostname: MacBook-Pro-2.local
+
+2023-05-22 10:22:40,816 ERROR 29122 [-/127.0.0.1/-/1ms GET /] nodejs.MongoNetworkError: [egg-mongoose]failed to connect to server [43.134.241.119:8082] on first connect [MongoNetworkTimeoutError: connection timed out
+    at connectionFailureError (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:362:14)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:16)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)]
+    at connectionFailureError (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:362:14)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:16)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)]
+    at Pool.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:441:11)
+    at Pool.emit (node:events:390:28)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:564:14
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:1000:11
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:32:7
+    at callback (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:300:5)
+    at Socket.<anonymous> (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/connect.js:330:7)
+    at Object.onceWrapper (node:events:509:28)
+    at Socket.emit (node:events:390:28)
+    at Socket._onTimeout (node:net:486:8)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+name: "MongoNetworkError"
+pid: 29122
+hostname: MacBook-Pro-2.local
+
+2023-05-22 15:01:26,392 ERROR 30323 [-/127.0.0.1/-/15ms GET /categorylist] nodejs.MongoError: pool destroyed
+    at Pool.write (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:844:8)
+    at _command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:149:10)
+    at command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:28:5)
+    at Object.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/query.js:70:3)
+    at Server.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:649:16)
+    at FindOperation.execute (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/find.js:38:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:144:17
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:837:3)
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/topologies/topology_base.js:342:32)
+    at executeWithServerSelection (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:131:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:70:9
+    at maybePromise (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/utils.js:692:3)
+    at executeOperation (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:34:10)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:541:7)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/cursor.js:190:11)
+    at nextFunction (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:744:10)
+name: "MongoError"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 30323
+hostname: MacBook-Pro-2.local
+
+2023-05-22 15:01:30,153 ERROR 30323 [-/127.0.0.1/-/1ms GET /categorylist] nodejs.MongoError: pool destroyed
+    at Pool.write (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:844:8)
+    at _command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:149:10)
+    at command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:28:5)
+    at Object.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/query.js:70:3)
+    at Server.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:649:16)
+    at FindOperation.execute (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/find.js:38:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:144:17
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:837:3)
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/topologies/topology_base.js:342:32)
+    at executeWithServerSelection (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:131:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:70:9
+    at maybePromise (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/utils.js:692:3)
+    at executeOperation (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:34:10)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:541:7)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/cursor.js:190:11)
+    at nextFunction (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:744:10)
+name: "MongoError"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 30323
+hostname: MacBook-Pro-2.local
+
+2023-05-22 15:01:33,008 ERROR 30323 [-/127.0.0.1/-/3ms GET /categorylist] nodejs.MongoError: pool destroyed
+    at Pool.write (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:844:8)
+    at _command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:149:10)
+    at command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:28:5)
+    at Object.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/query.js:70:3)
+    at Server.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:649:16)
+    at FindOperation.execute (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/find.js:38:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:144:17
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:837:3)
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/topologies/topology_base.js:342:32)
+    at executeWithServerSelection (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:131:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:70:9
+    at maybePromise (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/utils.js:692:3)
+    at executeOperation (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:34:10)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:541:7)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/cursor.js:190:11)
+    at nextFunction (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:744:10)
+name: "MongoError"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 30323
+hostname: MacBook-Pro-2.local
+
+2023-05-22 15:01:34,038 ERROR 30323 [-/127.0.0.1/-/2ms GET /categorylist] nodejs.MongoError: pool destroyed
+    at Pool.write (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:844:8)
+    at _command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:149:10)
+    at command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:28:5)
+    at Object.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/query.js:70:3)
+    at Server.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:649:16)
+    at FindOperation.execute (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/find.js:38:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:144:17
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:837:3)
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/topologies/topology_base.js:342:32)
+    at executeWithServerSelection (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:131:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:70:9
+    at maybePromise (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/utils.js:692:3)
+    at executeOperation (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:34:10)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:541:7)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/cursor.js:190:11)
+    at nextFunction (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:744:10)
+name: "MongoError"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 30323
+hostname: MacBook-Pro-2.local
+
+2023-05-22 15:01:46,899 ERROR 30323 [-/127.0.0.1/-/1ms GET /categorylist] nodejs.MongoError: pool destroyed
+    at Pool.write (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:844:8)
+    at _command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:149:10)
+    at command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:28:5)
+    at Object.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/query.js:70:3)
+    at Server.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:649:16)
+    at FindOperation.execute (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/find.js:38:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:144:17
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:837:3)
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/topologies/topology_base.js:342:32)
+    at executeWithServerSelection (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:131:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:70:9
+    at maybePromise (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/utils.js:692:3)
+    at executeOperation (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:34:10)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:541:7)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/cursor.js:190:11)
+    at nextFunction (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:744:10)
+name: "MongoError"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 30323
+hostname: MacBook-Pro-2.local
+
+2023-05-22 15:38:28,347 ERROR 30323 [-/127.0.0.1/-/7ms GET /categorylist] nodejs.MongoError: pool destroyed
+    at Pool.write (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:844:8)
+    at _command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:149:10)
+    at command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:28:5)
+    at Object.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/query.js:70:3)
+    at Server.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:649:16)
+    at FindOperation.execute (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/find.js:38:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:144:17
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:837:3)
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/topologies/topology_base.js:342:32)
+    at executeWithServerSelection (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:131:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:70:9
+    at maybePromise (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/utils.js:692:3)
+    at executeOperation (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:34:10)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:541:7)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/cursor.js:190:11)
+    at nextFunction (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:744:10)
+name: "MongoError"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 30323
+hostname: MacBook-Pro-2.local
+
+2023-05-22 15:38:30,849 ERROR 30323 [-/127.0.0.1/-/2ms GET /categorylist] nodejs.MongoError: pool destroyed
+    at Pool.write (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/connection/pool.js:844:8)
+    at _command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:149:10)
+    at command (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/command.js:28:5)
+    at Object.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/wireprotocol/query.js:70:3)
+    at Server.query (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:649:16)
+    at FindOperation.execute (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/find.js:38:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:144:17
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/topologies/server.js:837:3)
+    at Server.selectServer (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/topologies/topology_base.js:342:32)
+    at executeWithServerSelection (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:131:12)
+    at /Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:70:9
+    at maybePromise (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/utils.js:692:3)
+    at executeOperation (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/operations/execute_operation.js:34:10)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:541:7)
+    at Cursor._initializeCursor (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/cursor.js:190:11)
+    at nextFunction (/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/mongodb/lib/core/cursor.js:744:10)
+name: "MongoError"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 30323
+hostname: MacBook-Pro-2.local
+
