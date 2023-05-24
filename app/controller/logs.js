@@ -10,41 +10,40 @@ class LogsController extends Controller {
     const { ctx, app } = this;
     console.log('%c Line:11 🍆 ctx.request', 'font-size:18px;color:#ffffff;background:#FFCCCC', ctx.request);
     console.log('%c Line:11 🍆 ctx.request.body', 'font-size:18px;color:#ffffff;background:#FFCCCC', ctx.request.body);
-
     //========================存入数据库=================================
-    let insert_option = {
-      writeConcern: {
-        w: 2,
-        j: true,
-        wtimeout: 10000,
-      },
-    };
-    const data = {
-      timestamp: '2021-09-12 12:00:22',
-      projectName: ' document.title',
-      host: '192.168.2.2',
-      url: 'location.href',
-      userAgent: 'userAgent.parse(navigator.userAgent).name',
-      client: '客户端',
-      borwser: '浏览器',
-      type: 'error',
-      errorType: 'vueError',
-      request: '请求接口信息',
-      response: '返回接口信息',
-      message: '错误信息',
-      filename: '异常的资源url',
-      lineno: '异常行号',
-      colno: '异常列号',
-      error: {
-        message: '错误信息',
-        stack: '错误信息',
-      },
-    };
-
+    // let insert_option = {
+    //   writeConcern: {
+    //     w: 2,
+    //     j: true,
+    //     wtimeout: 10000,
+    //   },
+    // };
+    // const data = {
+    //   timestamp: '2021-09-12 12:00:22',
+    //   projectName: ' document.title',
+    //   host: '192.168.2.2',
+    //   url: 'location.href',
+    //   userAgent: 'userAgent.parse(navigator.userAgent).name',
+    //   client: '客户端',
+    //   borwser: '浏览器',
+    //   type: 'error',
+    //   errorType: 'vueError',
+    //   request: '请求接口信息',
+    //   response: '返回接口信息',
+    //   message: '错误信息',
+    //   filename: '异常的资源url',
+    //   lineno: '异常行号',
+    //   colno: '异常列号',
+    //   error: {
+    //     message: '错误信息',
+    //     stack: '错误信息',
+    //   },
+    // };
+    // ctx.body = 'hi,logs!';
     // const result = await ctx.model.Logs.insertOne(data, insert_option);
     // console.log(`Inserted ${result.insertedCount} document`);
+
     //========================存入文本=================================
-    return;
     //写日志
     // 日志目录
     const logDir = path.join(__dirname, 'logs');
@@ -69,8 +68,8 @@ class LogsController extends Controller {
     };
     let stream = fs.createWriteStream(__dirname + '/logs/' + fileName, options);
     stream.write(logData + '\n');
-    // 关闭可写流
-    stream.end();
+    // BUG:关闭可写流 这个注释掉就不会出现: master uncaughtException: Error: write EPIPE
+    // stream.end();
     ctx.body = 'hi,egg!';
   }
 

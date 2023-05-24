@@ -63,6 +63,9 @@ module.exports = (appInfo) => {
       // 有用户名和密码的数据库的连接方式
       url: 'mongodb://43.134.241.119:8082/webgps',
       options: {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
         auth: { authSource: 'admin' },
         user: 'user1',
         pass: '123456',
