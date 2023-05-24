@@ -5,12 +5,31 @@ const ERR_TYPE = require('./error');
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
+const bodyParserConfig = {
+  enable: true,
+  encoding: 'utf8',
+  formLimit: '100kb',
+  jsonLimit: '100kb',
+  strict: true,
+  // @see https://github.com/hapijs/qs/blob/master/lib/parse.js#L8 for more options
+  queryString: {
+    arrayLimit: 100,
+    depth: 5,
+    parameterLimit: 1000,
+  },
+  enableTypes: ['json', 'form', 'text'],
+  extendTypes: {
+    text: ['text/xml', 'application/xml', 'text/plain; charset=utf-8'],
+  },
+};
 module.exports = (appInfo) => {
   /**
    * built-in config
    * @type {Egg.EggAppConfig}
    **/
   const config = (exports = {});
+
+  config.bodyParser = bodyParserConfig;
 
   config.cors = {
     origin: '*', // 允许所有跨域访问，注释掉则允许上面 白名单 访问

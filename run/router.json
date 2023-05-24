@@ -188,6 +188,30 @@
       "POST"
     ],
     "paramNames": [],
+    "path": "/logs",
+    "regexp": "/^\\/logs(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/readlogs",
+    "regexp": "/^\\/readlogs(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
     "path": "/user",
     "regexp": "/^\\/user(?:\\/(?=$))?$/",
     "stack": [

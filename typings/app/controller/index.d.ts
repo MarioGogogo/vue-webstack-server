@@ -7,6 +7,7 @@ import ExportCategory = require('../../../app/controller/category');
 import ExportDownFiles = require('../../../app/controller/downFiles');
 import ExportHome = require('../../../app/controller/home');
 import ExportLinks = require('../../../app/controller/links');
+import ExportLogs = require('../../../app/controller/logs');
 import ExportReadJson = require('../../../app/controller/readJson');
 import ExportUser = require('../../../app/controller/user');
 
@@ -16,6 +17,7 @@ declare module 'egg' {
     downFiles: ExportDownFiles;
     home: ExportHome;
     links: ExportLinks;
+    logs: ExportLogs;
     readJson: ExportReadJson;
     user: ExportUser;
   }

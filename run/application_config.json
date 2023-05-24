@@ -240,6 +240,7 @@
         "declarations": true
       },
       "dependencies": {
+        "date-fns": "^2.30.0",
         "egg": "^3",
         "egg-cors": "^2.2.3",
         "egg-mongoose": "^3.3.1",
@@ -311,14 +312,26 @@
     "bodyParser": {
       "enable": true,
       "encoding": "utf8",
-      "formLimit": "1mb",
-      "jsonLimit": "1mb",
+      "formLimit": "100kb",
+      "jsonLimit": "100kb",
       "textLimit": "1mb",
       "strict": true,
       "queryString": {
         "arrayLimit": 100,
         "depth": 5,
         "parameterLimit": 1000
+      },
+      "enableTypes": [
+        "json",
+        "form",
+        "text"
+      ],
+      "extendTypes": {
+        "text": [
+          "text/xml",
+          "application/xml",
+          "text/plain; charset=utf-8"
+        ]
       },
       "returnRawBody": true
     },
@@ -621,6 +634,7 @@
         "declarations": true
       },
       "dependencies": {
+        "date-fns": "^2.30.0",
         "egg": "^3",
         "egg-cors": "^2.2.3",
         "egg-mongoose": "^3.3.1",

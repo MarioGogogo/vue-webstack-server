@@ -1,4 +1,22 @@
 {
+  "bodyParser": {
+    "enable": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js",
+    "encoding": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js",
+    "formLimit": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js",
+    "jsonLimit": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js",
+    "strict": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js",
+      "depth": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js",
+      "parameterLimit": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js"
+    },
+    "enableTypes": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js",
+    "extendTypes": {
+      "text": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js"
+    },
+    "textLimit": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
+    "onerror": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js"
+  },
   "cors": {
     "origin": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js",
     "credentials": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/config/config.default.js",
@@ -217,6 +235,7 @@
       "declarations": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js"
     },
     "dependencies": {
+      "date-fns": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
       "egg": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
       "egg-cors": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
       "egg-mongoose": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
@@ -282,20 +301,6 @@
   "siteFile": {
     "/favicon.ico": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
     "cacheControl": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js"
-  },
-  "bodyParser": {
-    "enable": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
-    "formLimit": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
-    "jsonLimit": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
-    "textLimit": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
-    "strict": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
-    "queryString": {
-      "arrayLimit": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
-      "depth": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",
-      "parameterLimit": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js"
-    },
-    "onerror": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js"
   },
   "logger": {
     "dir": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/node_modules/egg/config/config.default.js",

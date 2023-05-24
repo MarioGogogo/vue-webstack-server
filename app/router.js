@@ -25,6 +25,10 @@ module.exports = (app) => {
   router.post('/updatelinks', controller.links.updateLinks);
   router.post('/deletelinks', controller.links.deleteLinks);
   router.post('/bathdeletelinks', controller.links.bathdeleteLinks);
+
+  //日志系统
+  router.post('/logs', controller.logs.writeLogs);
+  router.post('/readlogs', controller.logs.readLogs);
   /**
    * 单独某一个接口效验
    */

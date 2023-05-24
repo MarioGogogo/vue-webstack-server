@@ -208,6 +208,7 @@
         "declarations": true
       },
       "dependencies": {
+        "date-fns": "^2.30.0",
         "egg": "^3",
         "egg-cors": "^2.2.3",
         "egg-mongoose": "^3.3.1",
@@ -279,8 +280,8 @@
     "bodyParser": {
       "enable": true,
       "encoding": "utf8",
-      "formLimit": "1mb",
-      "jsonLimit": "1mb",
+      "formLimit": "100kb",
+      "jsonLimit": "100kb",
       "textLimit": "1mb",
       "strict": true,
       "queryString": {
@@ -288,7 +289,19 @@
         "depth": 5,
         "parameterLimit": 1000
       },
-      "onerror": "<Function onerror>"
+      "onerror": "<Function onerror>",
+      "enableTypes": [
+        "json",
+        "form",
+        "text"
+      ],
+      "extendTypes": {
+        "text": [
+          "text/xml",
+          "application/xml",
+          "text/plain; charset=utf-8"
+        ]
+      }
     },
     "logger": {
       "dir": "/Users/lovewcc/Documents/Study/全栈-前后端导航项目/vue-webstack-server/logs/vue-webstack-server",
@@ -583,6 +596,7 @@
         "declarations": true
       },
       "dependencies": {
+        "date-fns": "^2.30.0",
         "egg": "^3",
         "egg-cors": "^2.2.3",
         "egg-mongoose": "^3.3.1",
