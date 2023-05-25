@@ -7,41 +7,44 @@ const { format } = require('date-fns');
 class LogsController extends Controller {
   // 最基础的请求
   async writeLogs() {
-    const { ctx, app } = this;
-    console.log('%c Line:11 🍆 ctx.request', 'font-size:18px;color:#ffffff;background:#FFCCCC', ctx.request);
-    console.log('%c Line:11 🍆 ctx.request.body', 'font-size:18px;color:#ffffff;background:#FFCCCC', ctx.request.body);
+    const { ctx } = this;
+
+    //获取请求客户IP
     //========================存入数据库=================================
-    // let insert_option = {
-    //   writeConcern: {
-    //     w: 2,
-    //     j: true,
-    //     wtimeout: 10000,
-    //   },
-    // };
-    // const data = {
-    //   timestamp: '2021-09-12 12:00:22',
-    //   projectName: ' document.title',
-    //   host: '192.168.2.2',
-    //   url: 'location.href',
-    //   userAgent: 'userAgent.parse(navigator.userAgent).name',
-    //   client: '客户端',
-    //   borwser: '浏览器',
-    //   type: 'error',
-    //   errorType: 'vueError',
-    //   request: '请求接口信息',
-    //   response: '返回接口信息',
-    //   message: '错误信息',
-    //   filename: '异常的资源url',
-    //   lineno: '异常行号',
-    //   colno: '异常列号',
-    //   error: {
-    //     message: '错误信息',
-    //     stack: '错误信息',
-    //   },
-    // };
-    // ctx.body = 'hi,logs!';
-    // const result = await ctx.model.Logs.insertOne(data, insert_option);
-    // console.log(`Inserted ${result.insertedCount} document`);
+    const request = JSON.parse(ctx.request.body);
+    const body = request.__logs__[0];
+    console.log('%c Line:16 🍭 body', 'font-size:18px;color:#ffffff;background:#8c7ae6', body);
+    const data = {
+      timestamp: body.timestamp,
+      reportTime: body.reportTime,
+      projectName: body.projectName,
+      host: ctx.req.socket.remoteAddress,
+      url: body.url,
+      userAgent: body.userAgent,
+      client: body.client,
+      borwser: body.borwser,
+      type: body.type,
+    };
+    let params = {};
+    switch (body.type) {
+      case 'error':
+        params = insertErrorData(body, data);
+        break;
+      case 'xhr':
+        params = insertHttpData(body, data);
+        break;
+      case 'performance':
+        params = insertPerformanceData(body, data);
+        break;
+    }
+    let insert_option = {
+      writeConcern: {
+        w: 2,
+        j: true,
+        wtimeout: 10000,
+      },
+    };
+    await ctx.model.Logs(params).save();
 
     //========================存入文本=================================
     //写日志
@@ -86,6 +89,78 @@ class LogsController extends Controller {
     // console.log(logData);
     ctx.response.success({ data: logData, message: '读取日志成功' });
   }
+}
+
+function insertErrorData(body, data) {
+  let params = {};
+  if (body.errorType === 'resourceError') {
+    params = Object.assign(data, {
+      errorType: body.errorType,
+      filename: body.filename,
+      tagName: body.tagName || '',
+      selector: body.selector || '',
+    });
+  } else if (body.errorType === 'jsError' || body.errorType === 'promiseError') {
+    params = Object.assign(data, {
+      errorType: body.errorType,
+      message: body.message,
+      filename: body.filename,
+      lineno: body.lineno,
+      colno: body.colno,
+      stack: body.stack,
+      selector: body.selector || '',
+    });
+  } else if (body.errorType === 'vueError') {
+    params = Object.assign(data, {
+      errorType: body.errorType,
+      message: body.message,
+    });
+  }
+  return params;
+}
+
+function insertHttpData(body, data) {
+  return Object.assign(data, {
+    eventType: body.eventType,
+    pathname: body.pathname, //请求路径
+    status: body.status, //状态码
+    duration: body.duration, //持续时间
+    response: body.response,
+    request: body.request,
+  });
+}
+
+function insertPerformanceData(body, data) {
+  let params = {};
+  if (body.eventType === 'firstInputDelay') {
+    params = Object.assign(data, {
+      eventType: body.eventType, //首次输入延迟
+      inputDelay: body.inputDelay, //延时的时间
+      duration: body.duration, //处理的时间
+      startTime: body.startTime,
+      selector: body.selector,
+    });
+  } else if (body.eventType === 'timing') {
+    params = Object.assign(data, {
+      eventType: body.eventType,
+      connectTime: body.connectTime, //连接时间
+      ttfbTime: body.ttfbTime, //首字节到达时间
+      responseTime: body.responseTime, //响应的读取时间
+      parseDOMTime: body.parseDOMTime, //DOM解析的时间
+      domContentLoadedTime: body.domContentLoadedTime,
+      timeToInteractive: body.timeToInteractive, //首次可交互时间
+      loadTIme: body.loadTIme, //完整的加载时间
+    });
+  } else if (body.eventType === 'paint') {
+    params = Object.assign(data, {
+      eventType: body.eventType, //统计每个阶段的时间
+      firstPaint: body.firstPaint,
+      firstContentfulPaint: body.firstContentfulPaint,
+      firstMeaningfulPaint: body.firstMeaningfulPaint,
+      largestContentfulPaint: body.largestContentfulPaint,
+    });
+  }
+  return params;
 }
 
 module.exports = LogsController;

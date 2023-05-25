@@ -3,7 +3,10 @@ module.exports = (app) => {
   const Schema = mongoose.Schema;
   const LogsSchema = new Schema({
     timestamp: {
-      //时间
+      type: String,
+      require: true,
+    },
+    reportTime: {
       type: String,
       require: true,
     },
@@ -37,12 +40,8 @@ module.exports = (app) => {
     },
     errorType: {
       type: String,
-      require: true,
     },
-    request: {
-      type: String,
-    },
-    response: {
+    eventType: {
       type: String,
     },
     message: {
@@ -51,14 +50,80 @@ module.exports = (app) => {
     filename: {
       type: String,
     },
+    tagName: {
+      type: String,
+    },
+    selector: {
+      type: String,
+    },
+    stack: {
+      type: String,
+    },
     lineno: {
       type: String,
     },
     colno: {
       type: String,
     },
-    error: {
-      type: Object,
+    pathname: {
+      type: String,
+    },
+    status: {
+      type: String,
+    },
+    duration: {
+      type: String,
+    },
+    request: {
+      type: String,
+    },
+    response: {
+      type: String,
+    },
+    inputDelay: {
+      type: String,
+    },
+    duration: {
+      type: String,
+    },
+    startTime: {
+      type: String,
+    },
+    selector: {
+      type: String,
+    },
+    connectTime: {
+      type: String,
+    },
+    ttfbTime: {
+      type: String,
+    },
+    responseTime: {
+      type: String,
+    },
+    parseDOMTime: {
+      type: String,
+    },
+    domContentLoadedTime: {
+      type: String,
+    },
+    timeToInteractive: {
+      type: String,
+    },
+    loadTIme: {
+      type: String,
+    },
+    firstPaint: {
+      type: String,
+    },
+    firstContentfulPaint: {
+      type: String,
+    },
+    firstMeaningfulPaint: {
+      type: String,
+    },
+    largestContentfulPaint: {
+      type: String,
     },
   });
   return mongoose.model('Logs', LogsSchema, 'logs');
