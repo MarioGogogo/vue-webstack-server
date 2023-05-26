@@ -30,7 +30,7 @@ module.exports = (app) => {
       type: String,
       require: true,
     },
-    borwser: {
+    browser: {
       type: String,
       require: true,
     },

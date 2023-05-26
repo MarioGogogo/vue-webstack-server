@@ -22,7 +22,7 @@ class LogsController extends Controller {
       url: body.url,
       userAgent: body.userAgent,
       client: body.client,
-      borwser: body.borwser,
+      browser: body.browser,
       type: body.type,
     };
     let params = {};
@@ -76,17 +76,20 @@ class LogsController extends Controller {
     ctx.body = 'hi,egg!';
   }
 
-  readLogs() {
+  async readLogs() {
     const { ctx } = this;
     // 获取当前日期和时间并格式化为指定格式
+    //=====================读取数据库的方式===========
+    const logData = await ctx.model.Logs.find({}, '-__v');
+    //=====================读取文件的方式1===========
     const currentDate = new Date();
     //yyyy-MM-dd-HH-mm-ss
-    const fileName = format(currentDate, 'yyyy-MM-dd') + '.log';
-    // 日志文件路径
-    const logFile = path.join(__dirname + '/logs', fileName);
-    // 读取日志文件中的内容
-    const logData = fs.readFileSync(logFile, 'utf-8');
-    // console.log(logData);
+    // const fileName = format(currentDate, 'yyyy-MM-dd') + '.log';
+    // // 日志文件路径
+    // const logFile = path.join(__dirname + '/logs', fileName);
+    // // 读取日志文件中的内容
+    // const logData = fs.readFileSync(logFile, 'utf-8');
+    // // console.log(logData);
     ctx.response.success({ data: logData, message: '读取日志成功' });
   }
 }
