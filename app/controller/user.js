@@ -1,11 +1,11 @@
 const { Controller } = require('egg');
+const { getRealAddress } = require('../utils');
 
 class UserController extends Controller {
   async login() {
     const { ctx } = this;
     // 检查表中是否没有账号,则第一次登录即注册
     const { username, password } = ctx.request.body;
-    console.log('%c Line:8 👩‍🏫 username, password', 'font-size:18px;color:#ffffff;background:#c23616', username, password);
     // 查询
     const doc = await this.ctx.model.User.find({});
     if (!doc.length) {
@@ -19,6 +19,8 @@ class UserController extends Controller {
         code: 200,
         message: '登录成功',
       };
+      //TODO:登录日志写入
+      this.writeLoginLogs();
     } else {
       // 判断账号密码是否正确
       const doc = await this.ctx.model.User.findOne({ username, password });
@@ -33,7 +35,9 @@ class UserController extends Controller {
           code: 200,
           message: '登录成功',
         };
+        this.writeLoginLogs();
       }
+      //TODO:登录日志写入
     }
   }
   async info() {
@@ -64,6 +68,32 @@ class UserController extends Controller {
     ctx.body = {
       name: `创建成功 ${ctx.request.body.name}`,
     };
+  }
+
+  async writeLoginLogs() {
+    const { ctx } = this;
+    const { username } = ctx.request.body;
+    console.log('%c Line:75 🍔 ctx.request', 'font-size:18px;color:#ffffff;background:#6ec1c2', ctx.request);
+    const header = ctx.request.header;
+    let str = header['sec-ch-ua'] || '';
+    let regex = /"(.*?)";/;
+    let matchResult = str ? str.match(regex) : [];
+    let browser = matchResult[1] || header['user-agent'];
+    const platform = header['sec-ch-ua-platform'] || '';
+    let address_val = [];
+    if (header.host != '127.0.0.1') {
+      const address = await getRealAddress(header.host);
+      address_val = address.data ? address.data : '获取地址失败';
+    }
+    const params = {
+      username,
+      status: 1,
+      host: header.host,
+      address: address_val[0] + address_val[1],
+      client: platform.substring(1, platform.length - 1),
+      browser: browser,
+    };
+    ctx.model.LoginLogs(params).save();
   }
 }
 module.exports = UserController;
