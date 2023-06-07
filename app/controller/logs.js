@@ -8,7 +8,6 @@ class LogsController extends Controller {
   // 最基础的请求
   async writeLogs() {
     const { ctx } = this;
-
     //获取请求客户IP
     //========================存入数据库=================================
     const request = JSON.parse(ctx.request.body);
@@ -37,6 +36,8 @@ class LogsController extends Controller {
         params = insertPerformanceData(body, data);
         break;
     }
+    await ctx.model.Logs(params).save();
+    //========================存入文本=================================
     let insert_option = {
       writeConcern: {
         w: 2,
@@ -44,12 +45,10 @@ class LogsController extends Controller {
         wtimeout: 10000,
       },
     };
-    await ctx.model.Logs(params).save();
-
-    //========================存入文本=================================
     //写日志
     // 日志目录
-    const logDir = path.join(__dirname, 'logs');
+    const logDir = path.join(__dirname, '../logs/');
+
     // 如果日志目录不存在，则创建目录
     if (!fs.existsSync(logDir)) {
       fs.mkdirSync(logDir);
@@ -69,25 +68,37 @@ class LogsController extends Controller {
       encoding: 'utf8', // utf8编码
       highWaterMark: 1024, //最高水位线
     };
-    let stream = fs.createWriteStream(__dirname + '/logs/' + fileName, options);
+
+    let stream = fs.createWriteStream(logDir + '/' + fileName, options);
     stream.write(logData + '\n');
     // BUG:关闭可写流 这个注释掉就不会出现: master uncaughtException: Error: write EPIPE
     // stream.end();
     ctx.body = 'hi,egg!';
   }
 
-  readLogs() {
+  async readLogs() {
     const { ctx } = this;
-    // 获取当前日期和时间并格式化为指定格式
-    const currentDate = new Date();
-    //yyyy-MM-dd-HH-mm-ss
-    const fileName = format(currentDate, 'yyyy-MM-dd') + '.log';
-    // 日志文件路径
-    const logFile = path.join(__dirname + '/logs', fileName);
-    // 读取日志文件中的内容
-    const logData = fs.readFileSync(logFile, 'utf-8');
+    // // 获取当前日期和时间并格式化为指定格式
+    // const currentDate = new Date();
+    // //yyyy-MM-dd-HH-mm-ss
+    // const fileName = format(currentDate, 'yyyy-MM-dd') + '.log';
+    // // 日志文件路径
+    // const logFile = path.join(__dirname, '..', './logs' + fileName);
+    // // 读取日志文件中的内容
+    // const logData = fs.readFileSync(logFile, 'utf-8');
+
+    //page参数不传则默认是1
+    const { page = 1 } = ctx.request.body;
+    const pageSize = 10;
+    const currentPage = parseInt(page);
+    const count = await ctx.model.Logs.countDocuments();
+    const logData = await ctx.model.Logs.find({}, '-__v')
+      .sort({ timestamp: -1 }) // 按照日期降序排列数据
+      .skip((currentPage - 1) * pageSize) // 跳过前面的数据
+      .limit(pageSize); // 限制只返回指定数量的数据
+
     // console.log(logData);
-    ctx.response.success({ data: logData, message: '读取日志成功' });
+    ctx.response.success({ data: { list: logData, count }, message: '读取日志成功' });
   }
 }
 
