@@ -78,7 +78,6 @@ class LogsController extends Controller {
 
   async readLogs() {
     const { ctx } = this;
-<<<<<<< HEAD
     // // 获取当前日期和时间并格式化为指定格式
     // const currentDate = new Date();
     // //yyyy-MM-dd-HH-mm-ss
@@ -100,21 +99,6 @@ class LogsController extends Controller {
 
     // console.log(logData);
     ctx.response.success({ data: { list: logData, count }, message: '读取日志成功' });
-=======
-    // 获取当前日期和时间并格式化为指定格式
-    //=====================读取数据库的方式===========
-    const logData = await ctx.model.Logs.find({}, '-__v');
-    //=====================读取文件的方式1===========
-    const currentDate = new Date();
-    //yyyy-MM-dd-HH-mm-ss
-    // const fileName = format(currentDate, 'yyyy-MM-dd') + '.log';
-    // // 日志文件路径
-    // const logFile = path.join(__dirname + '/logs', fileName);
-    // // 读取日志文件中的内容
-    // const logData = fs.readFileSync(logFile, 'utf-8');
-    // // console.log(logData);
-    ctx.response.success({ data: logData, message: '读取日志成功' });
->>>>>>> 1fcdd62c32291404c88e9541881a607734d4c0a7
   }
 
   async readLoginLogs() {
