@@ -29,6 +29,8 @@ module.exports = (app) => {
   //日志系统
   router.post('/logs', controller.logs.writeLogs);
   router.post('/readlogs', controller.logs.readLogs);
+  router.post('/readloginlogs', controller.logs.readLoginLogs);
+
   /**
    * 单独某一个接口效验
    */

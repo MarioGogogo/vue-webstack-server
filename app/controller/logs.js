@@ -92,6 +92,22 @@ class LogsController extends Controller {
     // // console.log(logData);
     ctx.response.success({ data: logData, message: '读取日志成功' });
   }
+
+  async readLoginLogs() {
+    const { ctx } = this;
+    const pageSize = 10; // 每页显示数量
+    let page = 1; // 当前页码
+    const query = {}; // 查询条件
+    const request = ctx.request.body;
+    page = request.page;
+    const total = await ctx.model.LoginLogs.countDocuments({});
+    const logData = await ctx.model.LoginLogs.find({}, '-__v')
+      .sort({ last_login_time: -1 }) // 根据日期降序排列
+      .skip((page - 1) * pageSize) // 跳过前面的数据
+      .limit(pageSize) // 取出指定数量的数据
+      .exec();
+    ctx.response.success({ data: { data: logData, total: total }, message: '读取日志成功' });
+  }
 }
 
 function insertErrorData(body, data) {
