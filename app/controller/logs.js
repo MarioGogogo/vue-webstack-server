@@ -28,15 +28,18 @@ class LogsController extends Controller {
     switch (body.type) {
       case 'error':
         params = insertErrorData(body, data);
+        ctx.model.ErrorLogs(params).save();
         break;
       case 'xhr':
         params = insertHttpData(body, data);
+        ctx.model.ActionLogs(params).save();
         break;
       case 'performance':
         params = insertPerformanceData(body, data);
+        ctx.model.PerformanceLogs(params).save();
         break;
     }
-    await ctx.model.Logs(params).save();
+    // await ctx.model.Logs(params).save();
     //========================存入文本=================================
     let insert_option = {
       writeConcern: {
@@ -78,27 +81,33 @@ class LogsController extends Controller {
 
   async readLogs() {
     const { ctx } = this;
-    // // 获取当前日期和时间并格式化为指定格式
-    // const currentDate = new Date();
-    // //yyyy-MM-dd-HH-mm-ss
-    // const fileName = format(currentDate, 'yyyy-MM-dd') + '.log';
-    // // 日志文件路径
-    // const logFile = path.join(__dirname, '..', './logs' + fileName);
-    // // 读取日志文件中的内容
-    // const logData = fs.readFileSync(logFile, 'utf-8');
-
-    //page参数不传则默认是1
-    const { page = 1 } = ctx.request.body;
+    const { page = 1, type } = ctx.request.body;
     const pageSize = 10;
     const currentPage = parseInt(page);
-    const count = await ctx.model.Logs.countDocuments();
-    const logData = await ctx.model.Logs.find({}, '-__v')
-      .sort({ timestamp: -1 }) // 按照日期降序排列数据
-      .skip((currentPage - 1) * pageSize) // 跳过前面的数据
-      .limit(pageSize); // 限制只返回指定数量的数据
+    let total = 0;
+    let logData = [];
 
+    if (type === 'error') {
+      total = await ctx.model.ErrorLogs.countDocuments();
+      logData = await ctx.model.ErrorLogs.find({}, '-__v')
+        .sort({ timestamp: -1 }) // 按照日期降序排列数据
+        .skip((currentPage - 1) * pageSize) // 跳过前面的数据
+        .limit(pageSize); // 限制只返回指定数量的数据
+    } else if (type === 'xhr') {
+      total = await ctx.model.ActionLogs.countDocuments();
+      logData = await ctx.model.ActionLogs.find({}, '-__v')
+        .sort({ timestamp: -1 }) // 按照日期降序排列数据
+        .skip((currentPage - 1) * pageSize) // 跳过前面的数据
+        .limit(pageSize); // 限制只返回指定数量的数据
+    } else if (type === 'performance') {
+      total = await ctx.model.PerformanceLogs.countDocuments();
+      logData = await ctx.model.PerformanceLogs.find({}, '-__v')
+        .sort({ timestamp: -1 }) // 按照日期降序排列数据
+        .skip((currentPage - 1) * pageSize) // 跳过前面的数据
+        .limit(pageSize); // 限制只返回指定数量的数据
+    }
     // console.log(logData);
-    ctx.response.success({ data: { list: logData, count }, message: '读取日志成功' });
+    ctx.response.success({ data: { data: logData, total }, message: '读取日志成功' });
   }
 
   async readLoginLogs() {
