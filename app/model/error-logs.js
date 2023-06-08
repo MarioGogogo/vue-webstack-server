@@ -22,6 +22,10 @@ module.exports = (app) => {
       type: String,
       require: true,
     },
+    userName: {
+      type: String,
+      require: true,
+    },
     userAgent: {
       type: String,
       require: true,

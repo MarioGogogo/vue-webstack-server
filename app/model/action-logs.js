@@ -2,10 +2,6 @@ module.exports = (app) => {
   const mongoose = app.mongoose;
   const Schema = mongoose.Schema;
   const ActionLogsSchema = new Schema({
-    timestamp: {
-      type: String,
-      require: true,
-    },
     reportTime: {
       type: String,
       require: true,
@@ -54,6 +50,9 @@ module.exports = (app) => {
       type: String,
     },
     response: {
+      type: String,
+    },
+    method: {
       type: String,
     },
   });

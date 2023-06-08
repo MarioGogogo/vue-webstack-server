@@ -42,6 +42,10 @@ module.exports = (app) => {
       type: Date,
       default: new Date(),
     },
+    timestamp: {
+      type: Date,
+      default: new Date().getTime(),
+    },
   });
   return mongoose.model('LoginLogs', LoginLogsSchema, 'login_logs');
 };

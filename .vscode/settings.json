@@ -10,14 +10,5 @@
   "editor.cursorWidth": 5,
   "editor.cursorBlinking": "solid",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Community Material Theme Darker",
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#9b59b6", //侧边栏背景色
-    "statusBarItem.hoverBackground": "#ff0000", //选择颜色
-    "statusBar.foreground": "#fff", //侧边栏前景色
-    "activityBar.background": "#9b59b6", //侧边工具栏
-    "activityBar.inactiveForeground": "#ebe8e8",
-    "activityBar.foreground": "#862cac", //侧边工具栏图标
-    "titleBar.inactiveBackground": "#ff0000" //非活动区域的颜色
-  }
+  "workbench.colorTheme": "Community Material Theme Darker"
 }

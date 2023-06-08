@@ -10,6 +10,7 @@ class LogsController extends Controller {
     const { ctx } = this;
     //获取请求客户IP
     //========================存入数据库=================================
+    const header = ctx.request.header;
     const request = JSON.parse(ctx.request.body);
     const body = request.__logs__[0];
     console.log('%c Line:16 🍭 body', 'font-size:18px;color:#ffffff;background:#8c7ae6', body);
@@ -17,12 +18,13 @@ class LogsController extends Controller {
       timestamp: body.timestamp,
       reportTime: body.reportTime,
       projectName: body.projectName,
-      host: ctx.req.socket.remoteAddress,
+      host: header.host,
       url: body.url,
       userAgent: body.userAgent,
       client: body.client,
       browser: body.browser,
       type: body.type,
+      userName: body.userName,
     };
     let params = {};
     switch (body.type) {
@@ -119,7 +121,7 @@ class LogsController extends Controller {
     page = request.page;
     const total = await ctx.model.LoginLogs.countDocuments({});
     const logData = await ctx.model.LoginLogs.find({}, '-__v')
-      .sort({ last_login_time: -1 }) // 根据日期降序排列
+      .sort({ timestamp: -1 }) // 根据日期降序排列
       .skip((page - 1) * pageSize) // 跳过前面的数据
       .limit(pageSize) // 取出指定数量的数据
       .exec();
@@ -163,6 +165,7 @@ function insertHttpData(body, data) {
     duration: body.duration, //持续时间
     response: body.response,
     request: body.request,
+    method: body.method,
   });
 }
 
