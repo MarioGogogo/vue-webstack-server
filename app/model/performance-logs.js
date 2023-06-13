@@ -41,19 +41,52 @@ module.exports = (app) => {
     errorType: {
       type: String,
     },
-    pathname: {
-      type: String,
-    },
-    status: {
+    inputDelay: {
       type: String,
     },
     duration: {
       type: String,
     },
-    request: {
+    startTime: {
       type: String,
     },
-    response: {
+    eventType: {
+      type: String,
+    },
+    selector: {
+      type: String,
+    },
+    connectTime: {
+      type: String,
+    },
+    ttfbTime: {
+      type: String,
+    },
+    responseTime: {
+      type: String,
+    },
+    parseDOMTime: {
+      type: String,
+    },
+    domContentLoadedTime: {
+      type: String,
+    },
+    timeToInteractive: {
+      type: String,
+    },
+    loadTIme: {
+      type: String,
+    },
+    firstPaint: {
+      type: String,
+    },
+    firstContentfulPaint: {
+      type: String,
+    },
+    firstMeaningfulPaint: {
+      type: String,
+    },
+    largestContentfulPaint: {
       type: String,
     },
   });

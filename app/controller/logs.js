@@ -108,7 +108,6 @@ class LogsController extends Controller {
         .skip((currentPage - 1) * pageSize) // 跳过前面的数据
         .limit(pageSize); // 限制只返回指定数量的数据
     }
-    // console.log(logData);
     ctx.response.success({ data: { data: logData, total }, message: '读取日志成功' });
   }
 
